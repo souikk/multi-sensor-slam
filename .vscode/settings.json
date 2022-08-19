@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ],
+    "files.associations": {
+        "*.ipp": "cpp",
+        "chrono": "cpp",
+        "ratio": "cpp",
+        "memory": "cpp"
+    },
+    "cmake.configureOnOpen": true
+}

@@ -1,0 +1,38 @@
+cmake_minimum_required(VERSION 3.5)
+project(localization)
+
+# Default to C99
+if(NOT CMAKE_C_STANDARD)
+  set(CMAKE_C_STANDARD 99)
+endif()
+
+# Default to C++14
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+set(WORKSPACE_PATH ${PROJECT_SOURCE_DIR})
+configure_file(${PROJECT_SOURCE_DIR}/include/localization/global_path/global_path.h.in ${PROJECT_BINARY_DIR}/include/global_path.h)
+
+# find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+
+include_directories(${PROJECT_SOURCE_DIR}/include/localization)
+include_directories(${PROJECT_BINARY_DIR}/include)
+add_executable(front_end src/front_end_flow_node.cpp src/front_end_flow.cpp src/subscriber/imuSubscriber.cpp)
+ament_target_dependencies(front_end rclcpp)
+
+
+
+
+
+
+
+
+
+ament_package()

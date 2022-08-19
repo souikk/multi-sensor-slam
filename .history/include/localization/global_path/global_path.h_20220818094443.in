@@ -1,0 +1,14 @@
+/*
+ * @Author: Ke Zhang
+ * @Date: 2022-08-18 09:06:08
+ * @LastEditTime: 2022-08-18 09:44:43
+ * @Description:
+ */
+#pragma once
+
+#include <string>
+
+namespace localization
+{
+    const std::string WORKSPACE_PATH = "@WORKSPACE_PATH@";
+}

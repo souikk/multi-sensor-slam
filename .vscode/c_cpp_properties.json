@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/usr/include/c++/9",
+                "/opt/ros/foxy/include/**",
+                "/home/zhangke/study/lslam/my_ws/src/localization/include/**",
+                "/usr/include/**",
+                "/usr/include/x86_64-linux-gnu/c++/7",
+                "${workspaceFolder}/../../build/localization/include/**",
+                "${workspaceFolder}/include/localization"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}
