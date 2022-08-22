@@ -1,24 +1,19 @@
 {
     "configurations": [
         {
-            "browse": {
-                "databaseFilename": "${default}",
-                "limitSymbolsToIncludedHeaders": false
-            },
+            "name": "Linux",
             "includePath": [
-                "/usr/include/c++/9",
+                "${workspaceFolder}/**",
                 "/opt/ros/foxy/include/**",
-                "/home/zhangke/study/lslam/my_ws/src/localization/include/**",
-                "/usr/include/**",
-                "/usr/include/x86_64-linux-gnu/c++/7",
                 "${workspaceFolder}/../../build/localization/include/**",
-                "${workspaceFolder}/include/localization"
+                "/usr/include/pcl-1.10",
+                "/usr/include/eigen3"
             ],
-            "name": "ROS",
-            "intelliSenseMode": "gcc-x64",
+            "defines": [],
             "compilerPath": "/usr/bin/gcc",
-            "cStandard": "gnu11",
-            "cppStandard": "c++14"
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
         }
     ],
     "version": 4

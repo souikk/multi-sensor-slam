@@ -1,0 +1,29 @@
+/*
+ * @Author: Ke Zhang
+ * @Date: 2022-08-17 17:42:37
+ * @LastEditTime: 2022-08-22 13:28:53
+ * @Description: 订阅imu数据类
+ */
+#pragma once
+
+#include <memory>
+#include <yaml-cpp/yaml.h>
+
+#include "sensor_msgs/msg/imu.hpp"
+#include "rclcpp/rclcpp.hpp"
+
+#include "global_path.h"
+namespace localization
+{
+    class ImuSubscriber
+    {
+    public:
+        ImuSubscriber(rclcpp::Node::SharedPtr node_ptr);
+
+    private:
+        void imuCallback(sensor_msgs::msg::Imu::SharedPtr msg);
+
+        rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr subImu_;
+        rclcpp::Node::SharedPtr node_ptr_;
+    };
+}
