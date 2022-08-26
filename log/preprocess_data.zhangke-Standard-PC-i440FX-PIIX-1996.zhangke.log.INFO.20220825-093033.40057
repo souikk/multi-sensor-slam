@@ -1,0 +1,5 @@
+Log file created at: 2022/08/25 09:30:33
+Running on machine: zhangke-Standard-PC-i440FX-PIIX-1996
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20220825 09:30:33.045457 40057 udistorted_point.cpp:15] input lidar type :0

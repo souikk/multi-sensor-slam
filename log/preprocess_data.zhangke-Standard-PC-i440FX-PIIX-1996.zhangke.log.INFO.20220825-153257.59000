@@ -1,0 +1,8 @@
+Log file created at: 2022/08/25 15:32:57
+Running on machine: zhangke-Standard-PC-i440FX-PIIX-1996
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20220825 15:32:57.979574 59000 preprocess_data_flow.cpp:64] rot:
+-1  0  0
+ 0 -1  0
+ 0  0  1

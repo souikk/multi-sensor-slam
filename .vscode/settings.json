@@ -1,10 +1,19 @@
 {
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ],
     "files.associations": {
         "bitset": "cpp",
         "memory": "cpp",
         "random": "cpp",
         "future": "cpp",
         "optional": "cpp",
-        "*.in": "cpp"
+        "*.in": "cpp",
+        "chrono": "cpp",
+        "*.tcc": "cpp",
+        "geometry": "cpp"
     }
 }

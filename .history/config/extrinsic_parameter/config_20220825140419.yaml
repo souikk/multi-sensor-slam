@@ -1,0 +1,7 @@
+cores: 32
+
+imu2lidar:
+  extrinsicTrans:  [ 0.0,  0.013,  0.089 ]
+  extrinsicRot:    [ -1.0,  0.0,  0.0,
+                      0.0, -1.0,  0.0,
+                      0.0,  0.0, 1.0 ]

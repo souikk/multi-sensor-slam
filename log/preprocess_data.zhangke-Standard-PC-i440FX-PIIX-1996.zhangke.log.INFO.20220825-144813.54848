@@ -1,0 +1,5 @@
+Log file created at: 2022/08/25 14:48:13
+Running on machine: zhangke-Standard-PC-i440FX-PIIX-1996
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20220825 14:48:13.112248 54848 preprocess_data_flow.cpp:52] imu2lidar: 0,0.013

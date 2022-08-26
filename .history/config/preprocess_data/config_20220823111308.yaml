@@ -1,0 +1,18 @@
+
+
+measurements:
+    lidar:
+        topic_name: /hesai/pandar_points
+        frame_id: laser_link
+        POLICY_HISTORY: 2            #POLICY_HISTORY=1为Keep last，2为Keep all
+        queue_size: 100000
+    imu:
+        topic_name: /imu/data
+        frame_id: imu_link
+        POLICY_HISTORY: 2
+        queue_size: 1000000
+    gnss:
+        topic_name: /rtk/data
+        frame_id: imu_link
+        POLICY_HISTORY: 2
+        queue_size: 1000000
