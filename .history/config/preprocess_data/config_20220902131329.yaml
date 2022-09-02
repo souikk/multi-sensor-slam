@@ -1,0 +1,40 @@
+subscriber:
+    policy_history: 1            #policy_history=1为Keep last，2为Keep all
+    lidar:
+        topic_name: /hesai/pandar_points
+        
+        queue_size: 2000
+    imu:
+        topic_name: /imu/data
+        
+        queue_size: 5000
+    gnss:
+        topic_name: /rtk/data
+        
+        queue_size: 5000
+
+publisher:
+policy_history: 1            #policy_history=1为Keep last，2为Keep all
+    lidar:
+        topic_name: /preprocess/undistortion_points
+        frame_id: laser_link
+        
+        queue_size: 10
+    gnss:
+        topic_name: /preprocess/gnss/data
+        frame_id: gnss_link
+        
+        queue_size: 10
+        
+
+preprocess:
+    numberOfCores: 32        #your num of cpu cores
+    N_SCAN: 128                                   # number of lidar channel (i.e., 16, 32, 64, 128)
+    Horizon_SCAN: 3600                            # lidar horizontal resolution (Pandar:3600,1800,900 Velodyne:1800, Ouster:512,1024,2048)
+    downsampleRate: 16                            # default: 1. Downsample your data if too many
+    # points. i.e., 16 = 64 / 4, 16 = 16 / 1
+    lidarMinRange: 1.0                           # default: 1.0, minimum lidar range to be used
+    lidarMaxRange: 1000.0                        # default: 1000.0, maximum lidar range to be used
+    lidar: 0
+
+    
